@@ -1,0 +1,104 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: aqua;
+}
+a{
+    text-decoration: none;
+}
+header{
+    display: flex;  
+   }
+.titulo{
+    display: flex;
+    width: 200px;
+    height: 200px;
+}
+.title{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    font-size: 60px;
+}
+.lista-nav {
+    margin-left: 120px;
+    align-items: auto;
+}
+
+.lista-nav li{
+    display: inline;
+    margin-left: 120px;
+    font-style: italic;
+    font-size: large;
+}
+
+.portada{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 520px;
+    width: 500px;
+    height: 200px;
+    align-content: center;
+}
+.parrafo-portada{
+    display: flex;
+    align-self: center;
+    margin-left: 520px;
+}
+
+.foto-grupo{
+    display: flexbox;
+    margin-left: 400px;
+    align-self: center;
+}
+.parrafo-portada2{
+    display: flex;
+    align-self: auto;
+    margin-left: 420px;
+}
+.carousel-inner{
+display: flex;
+padding-top: 200px;
+background-color: blue;
+margin-top: 20px;
+}
+
+
+.carousel-item{
+  width: 600px;  
+  height: 600px;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.carousel-control-prev{
+    display: flex;
+   
+}
+.carousel-control-prev-icon{
+    align-items: center;
+    font: bolder;
+    color: black;
+}
+
+
+.redes img{
+    width: 20px;
+    height: 20px;
+}
+
+
+
+.redes{
+    position: relative;
+}
+.derechos{
+    margin-top: 0px;
+    
+}
+
+p{
+    font-size: large;
+}
