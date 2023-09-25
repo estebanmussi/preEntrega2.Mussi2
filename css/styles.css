@@ -9,13 +9,34 @@ a{
     text-decoration: none;
 }
 header{
-    display: flex;  
-   }
-.titulo{
     display: flex;
-    width: 200px;
-    height: 200px;
+    width: auto;
+    height: auto;
 }
+.cabecera a{
+    display: flex;
+    gap: 10px;
+    width: auto;
+    height: auto;
+}
+
+.logo{
+width: 200px;
+height: auto;
+
+} 
+
+
+.titu{
+    width: auto;
+    height: auto;
+    margin:auto;
+    font-size: 40px;
+}
+
+
+
+
 .title{
     display: flex;
     align-items: center;
@@ -23,77 +44,193 @@ header{
     font-size: 60px;
 }
 .lista-nav {
-    margin-left: 120px;
-    align-items: auto;
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
 }
 
-.lista-nav li{
-    display: inline;
-    margin-left: 120px;
+.lista-nav a{
+    display: block;
     font-style: italic;
     font-size: large;
 }
 
-.portada{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 520px;
-    width: 500px;
+.porta{
+    display: flex;
+    width: 380px;
     height: 200px;
-    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
 }
+.parrafo-portada2{
+    display: flex;
+    justify-content: center;
+    width: 480px;
+    height: auto;
+
+}
+
+#grilla{
+    display: grid;
+    grid-template-areas: 
+    "foto1 foto2 foto3"
+    "foto4 foto5 foto6";
+    gap: 5px;
+    margin: 30px 0;
+    width: 470px;
+    height: auto;
+    align-content: center;
+    align-items: center;
+
+}
+
+
+@media (min-width:575px) and (max-width:767px){
+.porta{
+    width: 480px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    margin: auto; 
+}
+.lista-nav a{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-style: italic;
+    font-size-adjust: initial;
+    
+}
+#grilla{
+
+    width: 690px;
+    height: 250px;
+    
+
+}
+}
+@media (min-width:768px) and (max-width:991px){
+    .porta{
+        width:650px;
+        height: 350px;
+        align-items: center;
+        justify-content: center;
+        margin: auto; 
+    }
+    .lista-nav a{
+        display: block;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-style: italic;
+        font-size-adjust: initial;
+        
+    }
+    #grilla{
+    
+        width: 890px;
+        height: 250px;
+        
+    
+    }
+    }
+
+    @media (min-width:992px) and (max-width:1440px){
+        .porta{
+            width:850px;
+            height: 450px;
+            align-items: center;
+            justify-content: center;
+            margin: auto; 
+        }
+        .lista-nav a{
+            display: block;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            font-style: italic;
+            font-size-adjust: initial;
+            
+        }
+        #grilla{
+        
+            width: 1090px;
+            height: 450px;
+            
+        
+        }
+        .parrafo-portada2{
+            width: 980px;
+            height: auto; 
+            margin-bottom: 100px;
+        }
+
+        }
+
+
 .parrafo-portada{
     display: flex;
     align-self: center;
     margin-left: 520px;
 }
 
+
+
 .foto-grupo{
     display: flexbox;
     margin-left: 400px;
     align-self: center;
 }
-.parrafo-portada2{
-    display: flex;
-    align-self: auto;
-    margin-left: 420px;
-}
-.carousel-inner{
-display: flex;
-padding-top: 200px;
-background-color: blue;
-margin-top: 20px;
-}
 
 
-.carousel-item{
-  width: 600px;  
-  height: 600px;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
+
+.foto1, .foto2, .foto3, .foto4, .foto5, .foto6{
+max-width: 100%;
+height: 100px;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+
+
 }
-.carousel-control-prev{
-    display: flex;
-   
+.foto1{
+    background-image: url(../images/vs\ mexico.jpg);  
+    grid-area: foto1;
 }
-.carousel-control-prev-icon{
-    align-items: center;
-    font: bolder;
-    color: black;
+.foto2{
+    background-image: url(../images/messi\ croacia.jpg);
+    grid-area: foto2;
+}
+.foto3{
+background-image:url(../images/dibu\ australia.jpg);
+    grid-area: foto3;
+}
+.foto4{
+    background-image: url(../images/dibu\ holanda.jpg);
+    grid-area: foto4;
+}
+.foto5{
+    background-image:url(../images/vs\ polonia.jpg);
+    grid-area: foto5;
+}
+.foto6{
+    background-image: url(../images/dibu\ final.jpg);
+    grid-area: foto6;
 }
 
 
 .redes img{
-    width: 20px;
-    height: 20px;
+    width: 10%;
+    height: auto;
 }
 
 
 
 .redes{
-    position: relative;
+    display: block
+    
 }
+
+
 .derechos{
     margin-top: 0px;
     
